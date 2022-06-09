@@ -1,11 +1,17 @@
 fileFormatVersion: 2
-guid: f1d3602236655e64ebc4efb789cf3d1b
+guid: 461b4a658a2daf841a4b145a6e6a7e0c
 ModelImporter:
   serializedVersion: 21202
   internalIDToNameTable:
   - first:
-      74: -623603649343465320
-    second: Scene
+      74: -1578551020195733761
+    second: Armature|Closed Hand
+  - first:
+      74: 5617528666954193599
+    second: Armature|Open Hand
+  - first:
+      74: 6921663646331238300
+    second: Armature|Pointing Hand
   externalObjects: {}
   materials:
     materialImportMode: 2
