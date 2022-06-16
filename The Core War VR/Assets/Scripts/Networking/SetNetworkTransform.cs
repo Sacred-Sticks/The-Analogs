@@ -4,6 +4,7 @@ using System.Linq;
 using UnityEngine;
 using UnityEngine.SpatialTracking;
 
+[RequireComponent(typeof(NetworkObject))]
 [RequireComponent(typeof(NetworkTransform))]
 public class SetNetworkTransform : NetworkBehaviour
 {
@@ -31,6 +32,12 @@ public class SetNetworkTransform : NetworkBehaviour
             return;
         }
 
+        if (boneIndex == -2)
+        {
+            transformCopy = hand;
+            return;
+        }
+
         // Find the appropriate bones
         Transform child = pivot.GetChild(boneIndex);
         for (int i = 0; i < boneChildCount; i++)
@@ -49,6 +56,5 @@ public class SetNetworkTransform : NetworkBehaviour
 
         transform.position = transformCopy.position;
         transform.rotation = transformCopy.rotation;
-        transform.localScale = transformCopy.localScale;
     }
 }

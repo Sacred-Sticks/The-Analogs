@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1542343087133539002}
   - component: {fileID: 4808667763291491814}
   - component: {fileID: 1061845875396266337}
+  - component: {fileID: 714395544730079446}
   m_Layer: 0
   m_Name: Middle2
   m_TagString: Untagged
@@ -75,9 +76,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e117b8e0668d5e46973320e6b02c22b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _componentIndexCache: 19
+  _componentIndexCache: 4
   _addedNetworkObject: {fileID: 9131833438004412476}
-  _networkObjectCache: {fileID: 9131833438004412476}
+  _networkObjectCache: {fileID: 4224868444770373514}
   handName: Left Hand Model
   boneIndex: 2
   boneChildCount: 2
@@ -94,9 +95,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2836e36774ca1c4bbbee976e17b649c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _componentIndexCache: 20
+  _componentIndexCache: 5
   _addedNetworkObject: {fileID: 9131833438004412476}
-  _networkObjectCache: {fileID: 9131833438004412476}
+  _networkObjectCache: {fileID: 4224868444770373514}
   _synchronizeParent: 0
   _packing:
     Position: 1
@@ -124,6 +125,32 @@ MonoBehaviour:
     X: 0
     Y: 0
     Z: 0
+--- !u!114 &714395544730079446
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 38604252966860429}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26b716c41e9b56b4baafaf13a523ba2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _networkBehaviours:
+  - {fileID: 4808667763291491814}
+  - {fileID: 1061845875396266337}
+  SceneTransformProperties:
+    Position: {x: 0.0146788275, y: 0.0044184066, z: 0.08207262}
+    Rotation: {x: 0.56579447, y: 0.010253608, z: -0.82448256, w: 0.0006004768}
+    LocalScale: {x: 1.000003, y: 1.0000048, z: 0.99999994}
+  _isNetworked: 1
+  _hasParentNetworkObjectAtEdit: 1
+  NetworkObserver: {fileID: 0}
+  _prefabId: -1
+  _scenePathHash: 0
+  _sceneId: 0
+  _sceneNetworkObjects: []
 --- !u!1 &80614381195717976
 GameObject:
   m_ObjectHideFlags: 0
@@ -135,6 +162,7 @@ GameObject:
   - component: {fileID: 8623060135659778813}
   - component: {fileID: 4764565348589447322}
   - component: {fileID: 2713878923613379010}
+  - component: {fileID: 7990589472592365271}
   m_Layer: 0
   m_Name: Pivot
   m_TagString: Untagged
@@ -227,6 +255,64 @@ MonoBehaviour:
   boneIndex: -1
   boneChildCount: 0
   transformCopy: {fileID: 0}
+--- !u!114 &7990589472592365271
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 80614381195717976}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26b716c41e9b56b4baafaf13a523ba2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _networkBehaviours:
+  - {fileID: 4764565348589447322}
+  - {fileID: 2713878923613379010}
+  - {fileID: 7843784311993349893}
+  - {fileID: 7630780045840328765}
+  - {fileID: 8408789500296059765}
+  - {fileID: 5552404613229304546}
+  - {fileID: 947386375527017167}
+  - {fileID: 9076527650751673654}
+  - {fileID: 2698097118654943110}
+  - {fileID: 2494841506628119004}
+  - {fileID: 136135339454365106}
+  - {fileID: 4019068810934521606}
+  - {fileID: 7411468569595615361}
+  - {fileID: 3885322313703991744}
+  - {fileID: 5648244679391189442}
+  - {fileID: 2196837449199076178}
+  - {fileID: 2070782464091013201}
+  - {fileID: 5664748927078448939}
+  - {fileID: 4808667763291491814}
+  - {fileID: 1061845875396266337}
+  - {fileID: 6315544202672844087}
+  - {fileID: 3361224572601490544}
+  - {fileID: 7715634487129168239}
+  - {fileID: 2398621433318346999}
+  - {fileID: 2347498022431061830}
+  - {fileID: 97674216668090283}
+  - {fileID: 7291845923233141016}
+  - {fileID: 7203782099558497535}
+  - {fileID: 441328318977555156}
+  - {fileID: 8097621988375281002}
+  - {fileID: 459022451216225499}
+  - {fileID: 483871163269624722}
+  - {fileID: 7846266717222004180}
+  - {fileID: 3111840510940137946}
+  SceneTransformProperties:
+    Position: {x: 0, y: 0, z: 0}
+    Rotation: {x: 0, y: 0, z: 0, w: 0}
+    LocalScale: {x: 0, y: 0, z: 0}
+  _isNetworked: 1
+  _hasParentNetworkObjectAtEdit: 1
+  NetworkObserver: {fileID: 0}
+  _prefabId: -1
+  _scenePathHash: 0
+  _sceneId: 0
+  _sceneNetworkObjects: []
 --- !u!1 &321774288798330026
 GameObject:
   m_ObjectHideFlags: 0
@@ -240,6 +326,7 @@ GameObject:
   - component: {fileID: 3446376021525746148}
   - component: {fileID: 7411468569595615361}
   - component: {fileID: 3885322313703991744}
+  - component: {fileID: 8071051381057465257}
   m_Layer: 0
   m_Name: Index2
   m_TagString: Untagged
@@ -302,9 +389,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e117b8e0668d5e46973320e6b02c22b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _componentIndexCache: 13
+  _componentIndexCache: 0
   _addedNetworkObject: {fileID: 9131833438004412476}
-  _networkObjectCache: {fileID: 9131833438004412476}
+  _networkObjectCache: {fileID: 8071051381057465257}
   handName: Left Hand Model
   boneIndex: 1
   boneChildCount: 2
@@ -321,9 +408,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2836e36774ca1c4bbbee976e17b649c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _componentIndexCache: 14
+  _componentIndexCache: 1
   _addedNetworkObject: {fileID: 9131833438004412476}
-  _networkObjectCache: {fileID: 9131833438004412476}
+  _networkObjectCache: {fileID: 8071051381057465257}
   _synchronizeParent: 0
   _packing:
     Position: 1
@@ -351,6 +438,32 @@ MonoBehaviour:
     X: 0
     Y: 0
     Z: 0
+--- !u!114 &8071051381057465257
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 321774288798330026}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26b716c41e9b56b4baafaf13a523ba2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _networkBehaviours:
+  - {fileID: 7411468569595615361}
+  - {fileID: 3885322313703991744}
+  SceneTransformProperties:
+    Position: {x: 0.013469711, y: 0.041212913, z: 0.071691915}
+    Rotation: {x: 0.5557106, y: -0.10352566, z: -0.8247775, w: -0.014504217}
+    LocalScale: {x: 0.99999976, y: 1.0000054, z: 1.0000014}
+  _isNetworked: 1
+  _hasParentNetworkObjectAtEdit: 0
+  NetworkObserver: {fileID: 0}
+  _prefabId: -1
+  _scenePathHash: 0
+  _sceneId: 0
+  _sceneNetworkObjects: []
 --- !u!1 &690425101040525843
 GameObject:
   m_ObjectHideFlags: 0
@@ -427,6 +540,7 @@ GameObject:
   - component: {fileID: 2542011170452542816}
   - component: {fileID: 2070782464091013201}
   - component: {fileID: 5664748927078448939}
+  - component: {fileID: 4872304569725392773}
   m_Layer: 0
   m_Name: Middle1
   m_TagString: Untagged
@@ -489,9 +603,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e117b8e0668d5e46973320e6b02c22b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _componentIndexCache: 17
+  _componentIndexCache: 2
   _addedNetworkObject: {fileID: 9131833438004412476}
-  _networkObjectCache: {fileID: 9131833438004412476}
+  _networkObjectCache: {fileID: 4224868444770373514}
   handName: Left Hand Model
   boneIndex: 2
   boneChildCount: 1
@@ -508,9 +622,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2836e36774ca1c4bbbee976e17b649c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _componentIndexCache: 18
+  _componentIndexCache: 3
   _addedNetworkObject: {fileID: 9131833438004412476}
-  _networkObjectCache: {fileID: 9131833438004412476}
+  _networkObjectCache: {fileID: 4224868444770373514}
   _synchronizeParent: 0
   _packing:
     Position: 1
@@ -538,6 +652,34 @@ MonoBehaviour:
     X: 0
     Y: 0
     Z: 0
+--- !u!114 &4872304569725392773
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1406022381304218356}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26b716c41e9b56b4baafaf13a523ba2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _networkBehaviours:
+  - {fileID: 2070782464091013201}
+  - {fileID: 5664748927078448939}
+  - {fileID: 4808667763291491814}
+  - {fileID: 1061845875396266337}
+  SceneTransformProperties:
+    Position: {x: 0.0067879646, y: 0.0052387225, z: 0.051982112}
+    Rotation: {x: 0.610897, y: 0.01610056, z: -0.79153526, w: -0.0042255176}
+    LocalScale: {x: 1.0000002, y: 1.000003, z: 1.0000015}
+  _isNetworked: 1
+  _hasParentNetworkObjectAtEdit: 1
+  NetworkObserver: {fileID: 0}
+  _prefabId: -1
+  _scenePathHash: 0
+  _sceneId: 0
+  _sceneNetworkObjects: []
 --- !u!1 &1488200266895188098
 GameObject:
   m_ObjectHideFlags: 0
@@ -717,6 +859,7 @@ GameObject:
   - component: {fileID: 4559475068870561496}
   - component: {fileID: 7715634487129168239}
   - component: {fileID: 2398621433318346999}
+  - component: {fileID: 7872556054637311940}
   m_Layer: 0
   m_Name: Ring1
   m_TagString: Untagged
@@ -779,9 +922,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2836e36774ca1c4bbbee976e17b649c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _componentIndexCache: 23
+  _componentIndexCache: 2
   _addedNetworkObject: {fileID: 9131833438004412476}
-  _networkObjectCache: {fileID: 9131833438004412476}
+  _networkObjectCache: {fileID: 5466347498192256416}
   _synchronizeParent: 0
   _packing:
     Position: 1
@@ -821,13 +964,41 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e117b8e0668d5e46973320e6b02c22b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _componentIndexCache: 24
+  _componentIndexCache: 3
   _addedNetworkObject: {fileID: 9131833438004412476}
-  _networkObjectCache: {fileID: 9131833438004412476}
+  _networkObjectCache: {fileID: 5466347498192256416}
   handName: Left Hand Model
   boneIndex: 3
   boneChildCount: 1
   transformCopy: {fileID: 0}
+--- !u!114 &7872556054637311940
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1569893950974935776}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26b716c41e9b56b4baafaf13a523ba2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _networkBehaviours:
+  - {fileID: 7715634487129168239}
+  - {fileID: 2398621433318346999}
+  - {fileID: 2347498022431061830}
+  - {fileID: 97674216668090283}
+  SceneTransformProperties:
+    Position: {x: 0.012847018, y: -0.023081183, z: 0.037637945}
+    Rotation: {x: 0.6052838, y: 0.16914073, z: -0.7775031, w: 0.022625647}
+    LocalScale: {x: 1.0000008, y: 1.0000033, z: 1.0000023}
+  _isNetworked: 1
+  _hasParentNetworkObjectAtEdit: 1
+  NetworkObserver: {fileID: 0}
+  _prefabId: -1
+  _scenePathHash: 0
+  _sceneId: 0
+  _sceneNetworkObjects: []
 --- !u!1 &1655404267182173133
 GameObject:
   m_ObjectHideFlags: 0
@@ -841,6 +1012,7 @@ GameObject:
   - component: {fileID: 3893439638056541498}
   - component: {fileID: 8408789500296059765}
   - component: {fileID: 5552404613229304546}
+  - component: {fileID: 7941746013909722706}
   m_Layer: 0
   m_Name: Thumb1
   m_TagString: Untagged
@@ -903,9 +1075,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e117b8e0668d5e46973320e6b02c22b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _componentIndexCache: 5
+  _componentIndexCache: 0
   _addedNetworkObject: {fileID: 9131833438004412476}
-  _networkObjectCache: {fileID: 9131833438004412476}
+  _networkObjectCache: {fileID: 7941746013909722706}
   handName: Left Hand Model
   boneIndex: 0
   boneChildCount: 1
@@ -922,9 +1094,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2836e36774ca1c4bbbee976e17b649c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _componentIndexCache: 6
+  _componentIndexCache: 1
   _addedNetworkObject: {fileID: 9131833438004412476}
-  _networkObjectCache: {fileID: 9131833438004412476}
+  _networkObjectCache: {fileID: 7941746013909722706}
   _synchronizeParent: 0
   _packing:
     Position: 1
@@ -952,6 +1124,34 @@ MonoBehaviour:
     X: 0
     Y: 0
     Z: 0
+--- !u!114 &7941746013909722706
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1655404267182173133}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26b716c41e9b56b4baafaf13a523ba2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _networkBehaviours:
+  - {fileID: 8408789500296059765}
+  - {fileID: 5552404613229304546}
+  - {fileID: 947386375527017167}
+  - {fileID: 9076527650751673654}
+  SceneTransformProperties:
+    Position: {x: 0.017847849, y: 0.061784066, z: -0.033428203}
+    Rotation: {x: 0.6238789, y: -0.5153674, z: -0.58718693, w: -0.019581234}
+    LocalScale: {x: 1.0000014, y: 1.000003, z: 1.0000001}
+  _isNetworked: 1
+  _hasParentNetworkObjectAtEdit: 0
+  NetworkObserver: {fileID: 0}
+  _prefabId: -1
+  _scenePathHash: 0
+  _sceneId: 0
+  _sceneNetworkObjects: []
 --- !u!1 &2105016726448109200
 GameObject:
   m_ObjectHideFlags: 0
@@ -998,6 +1198,7 @@ GameObject:
   - component: {fileID: 8797288763674235705}
   - component: {fileID: 6315544202672844087}
   - component: {fileID: 3361224572601490544}
+  - component: {fileID: 5466347498192256416}
   m_Layer: 0
   m_Name: Ring
   m_TagString: Untagged
@@ -1097,9 +1298,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2836e36774ca1c4bbbee976e17b649c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _componentIndexCache: 21
+  _componentIndexCache: 0
   _addedNetworkObject: {fileID: 9131833438004412476}
-  _networkObjectCache: {fileID: 9131833438004412476}
+  _networkObjectCache: {fileID: 5466347498192256416}
   _synchronizeParent: 0
   _packing:
     Position: 1
@@ -1139,13 +1340,43 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e117b8e0668d5e46973320e6b02c22b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _componentIndexCache: 22
+  _componentIndexCache: 1
   _addedNetworkObject: {fileID: 9131833438004412476}
-  _networkObjectCache: {fileID: 9131833438004412476}
+  _networkObjectCache: {fileID: 5466347498192256416}
   handName: Left Hand Model
   boneIndex: 3
   boneChildCount: 0
   transformCopy: {fileID: 0}
+--- !u!114 &5466347498192256416
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2203987681536929764}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26b716c41e9b56b4baafaf13a523ba2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _networkBehaviours:
+  - {fileID: 6315544202672844087}
+  - {fileID: 3361224572601490544}
+  - {fileID: 7715634487129168239}
+  - {fileID: 2398621433318346999}
+  - {fileID: 2347498022431061830}
+  - {fileID: 97674216668090283}
+  SceneTransformProperties:
+    Position: {x: 0.006023471, y: -0.01428087, z: 0.0060945274}
+    Rotation: {x: 0.6307772, y: 0.19522332, z: -0.7509215, w: -0.011180936}
+    LocalScale: {x: 0.9999996, y: 1.000002, z: 1.0000023}
+  _isNetworked: 1
+  _hasParentNetworkObjectAtEdit: 0
+  NetworkObserver: {fileID: 0}
+  _prefabId: -1
+  _scenePathHash: 0
+  _sceneId: 0
+  _sceneNetworkObjects: []
 --- !u!1 &2424192668181174422
 GameObject:
   m_ObjectHideFlags: 0
@@ -1159,6 +1390,7 @@ GameObject:
   - component: {fileID: 6893443822300562434}
   - component: {fileID: 136135339454365106}
   - component: {fileID: 4019068810934521606}
+  - component: {fileID: 3805881919706450756}
   m_Layer: 0
   m_Name: Index1
   m_TagString: Untagged
@@ -1270,6 +1502,34 @@ MonoBehaviour:
     X: 0
     Y: 0
     Z: 0
+--- !u!114 &3805881919706450756
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2424192668181174422}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26b716c41e9b56b4baafaf13a523ba2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _networkBehaviours:
+  - {fileID: 136135339454365106}
+  - {fileID: 4019068810934521606}
+  - {fileID: 7411468569595615361}
+  - {fileID: 3885322313703991744}
+  SceneTransformProperties:
+    Position: {x: 0.0076909037, y: 0.037567418, z: 0.04254169}
+    Rotation: {x: 0.635169, y: -0.104749516, z: -0.7652016, w: -0.007389144}
+    LocalScale: {x: 0.9999992, y: 1.0000033, z: 1.0000032}
+  _isNetworked: 1
+  _hasParentNetworkObjectAtEdit: 1
+  NetworkObserver: {fileID: 0}
+  _prefabId: -1
+  _scenePathHash: 0
+  _sceneId: 0
+  _sceneNetworkObjects: []
 --- !u!1 &2639051276892957589
 GameObject:
   m_ObjectHideFlags: 0
@@ -1405,6 +1665,7 @@ GameObject:
   - component: {fileID: 3717903156498031782}
   - component: {fileID: 441328318977555156}
   - component: {fileID: 8097621988375281002}
+  - component: {fileID: 1900213430318227538}
   m_Layer: 0
   m_Name: Pinky1
   m_TagString: Untagged
@@ -1467,9 +1728,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2836e36774ca1c4bbbee976e17b649c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _componentIndexCache: 29
+  _componentIndexCache: 2
   _addedNetworkObject: {fileID: 9131833438004412476}
-  _networkObjectCache: {fileID: 9131833438004412476}
+  _networkObjectCache: {fileID: 7732153922055242509}
   _synchronizeParent: 0
   _packing:
     Position: 1
@@ -1509,13 +1770,41 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e117b8e0668d5e46973320e6b02c22b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _componentIndexCache: 30
+  _componentIndexCache: 3
   _addedNetworkObject: {fileID: 9131833438004412476}
-  _networkObjectCache: {fileID: 9131833438004412476}
+  _networkObjectCache: {fileID: 7732153922055242509}
   handName: Left Hand Model
   boneIndex: 4
   boneChildCount: 1
   transformCopy: {fileID: 0}
+--- !u!114 &1900213430318227538
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2933024242351756430}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26b716c41e9b56b4baafaf13a523ba2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _networkBehaviours:
+  - {fileID: 441328318977555156}
+  - {fileID: 8097621988375281002}
+  - {fileID: 459022451216225499}
+  - {fileID: 483871163269624722}
+  SceneTransformProperties:
+    Position: {x: 0.018498167, y: -0.045705546, z: 0.022349829}
+    Rotation: {x: 0.5724562, y: 0.2676861, z: -0.7721064, w: 0.06700769}
+    LocalScale: {x: 1.000002, y: 1.000004, z: 1.0000021}
+  _isNetworked: 1
+  _hasParentNetworkObjectAtEdit: 1
+  NetworkObserver: {fileID: 0}
+  _prefabId: -1
+  _scenePathHash: 0
+  _sceneId: 0
+  _sceneNetworkObjects: []
 --- !u!1 &2942372749406987911
 GameObject:
   m_ObjectHideFlags: 0
@@ -1561,6 +1850,7 @@ GameObject:
   - component: {fileID: 4702482750359019280}
   - component: {fileID: 7291845923233141016}
   - component: {fileID: 7203782099558497535}
+  - component: {fileID: 7732153922055242509}
   m_Layer: 0
   m_Name: Pinky
   m_TagString: Untagged
@@ -1660,9 +1950,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2836e36774ca1c4bbbee976e17b649c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _componentIndexCache: 27
+  _componentIndexCache: 0
   _addedNetworkObject: {fileID: 9131833438004412476}
-  _networkObjectCache: {fileID: 9131833438004412476}
+  _networkObjectCache: {fileID: 7732153922055242509}
   _synchronizeParent: 0
   _packing:
     Position: 1
@@ -1702,13 +1992,43 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e117b8e0668d5e46973320e6b02c22b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _componentIndexCache: 28
+  _componentIndexCache: 1
   _addedNetworkObject: {fileID: 9131833438004412476}
-  _networkObjectCache: {fileID: 9131833438004412476}
+  _networkObjectCache: {fileID: 7732153922055242509}
   handName: Left Hand Model
   boneIndex: 4
   boneChildCount: 0
   transformCopy: {fileID: 0}
+--- !u!114 &7732153922055242509
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3281836246604390672}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26b716c41e9b56b4baafaf13a523ba2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _networkBehaviours:
+  - {fileID: 7291845923233141016}
+  - {fileID: 7203782099558497535}
+  - {fileID: 441328318977555156}
+  - {fileID: 8097621988375281002}
+  - {fileID: 459022451216225499}
+  - {fileID: 483871163269624722}
+  SceneTransformProperties:
+    Position: {x: 0.012537395, y: -0.03568282, z: -0.0026533902}
+    Rotation: {x: 0.6255159, y: 0.3205012, z: -0.71084946, w: 0.02649611}
+    LocalScale: {x: 0.9999999, y: 1.0000018, z: 1.0000019}
+  _isNetworked: 1
+  _hasParentNetworkObjectAtEdit: 0
+  NetworkObserver: {fileID: 0}
+  _prefabId: -1
+  _scenePathHash: 0
+  _sceneId: 0
+  _sceneNetworkObjects: []
 --- !u!1 &3404326262718407699
 GameObject:
   m_ObjectHideFlags: 0
@@ -1722,6 +2042,7 @@ GameObject:
   - component: {fileID: 8793291461972723131}
   - component: {fileID: 459022451216225499}
   - component: {fileID: 483871163269624722}
+  - component: {fileID: 3525178321832562975}
   m_Layer: 0
   m_Name: Pinky2
   m_TagString: Untagged
@@ -1784,9 +2105,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2836e36774ca1c4bbbee976e17b649c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _componentIndexCache: 31
+  _componentIndexCache: 4
   _addedNetworkObject: {fileID: 9131833438004412476}
-  _networkObjectCache: {fileID: 9131833438004412476}
+  _networkObjectCache: {fileID: 7732153922055242509}
   _synchronizeParent: 0
   _packing:
     Position: 1
@@ -1826,13 +2147,39 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e117b8e0668d5e46973320e6b02c22b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _componentIndexCache: 32
+  _componentIndexCache: 5
   _addedNetworkObject: {fileID: 9131833438004412476}
-  _networkObjectCache: {fileID: 9131833438004412476}
+  _networkObjectCache: {fileID: 7732153922055242509}
   handName: Left Hand Model
   boneIndex: 4
   boneChildCount: 2
   transformCopy: {fileID: 0}
+--- !u!114 &3525178321832562975
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3404326262718407699}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26b716c41e9b56b4baafaf13a523ba2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _networkBehaviours:
+  - {fileID: 459022451216225499}
+  - {fileID: 483871163269624722}
+  SceneTransformProperties:
+    Position: {x: 0.02512296, y: -0.049712863, z: 0.04050806}
+    Rotation: {x: 0.5557608, y: 0.22910066, z: -0.7966319, w: 0.06340812}
+    LocalScale: {x: 1.0000057, y: 1.0000064, z: 1.0000006}
+  _isNetworked: 1
+  _hasParentNetworkObjectAtEdit: 1
+  NetworkObserver: {fileID: 0}
+  _prefabId: -1
+  _scenePathHash: 0
+  _sceneId: 0
+  _sceneNetworkObjects: []
 --- !u!1 &4899236841445389450
 GameObject:
   m_ObjectHideFlags: 0
@@ -1847,6 +2194,7 @@ GameObject:
   - component: {fileID: 326366043966017214}
   - component: {fileID: 5648244679391189442}
   - component: {fileID: 2196837449199076178}
+  - component: {fileID: 4224868444770373514}
   m_Layer: 0
   m_Name: Middle
   m_TagString: Untagged
@@ -1946,9 +2294,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e117b8e0668d5e46973320e6b02c22b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _componentIndexCache: 15
+  _componentIndexCache: 0
   _addedNetworkObject: {fileID: 9131833438004412476}
-  _networkObjectCache: {fileID: 9131833438004412476}
+  _networkObjectCache: {fileID: 4224868444770373514}
   handName: Left Hand Model
   boneIndex: 2
   boneChildCount: 0
@@ -1965,9 +2313,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2836e36774ca1c4bbbee976e17b649c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _componentIndexCache: 16
+  _componentIndexCache: 1
   _addedNetworkObject: {fileID: 9131833438004412476}
-  _networkObjectCache: {fileID: 9131833438004412476}
+  _networkObjectCache: {fileID: 4224868444770373514}
   _synchronizeParent: 0
   _packing:
     Position: 1
@@ -1995,6 +2343,36 @@ MonoBehaviour:
     X: 0
     Y: 0
     Z: 0
+--- !u!114 &4224868444770373514
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4899236841445389450}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26b716c41e9b56b4baafaf13a523ba2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _networkBehaviours:
+  - {fileID: 5648244679391189442}
+  - {fileID: 2196837449199076178}
+  - {fileID: 2070782464091013201}
+  - {fileID: 5664748927078448939}
+  - {fileID: 4808667763291491814}
+  - {fileID: 1061845875396266337}
+  SceneTransformProperties:
+    Position: {x: 0.0019028791, y: 0.007300702, z: 0.01372344}
+    Rotation: {x: 0.66073674, y: 0.024882067, z: -0.7500808, w: -0.013667376}
+    LocalScale: {x: 0.99999905, y: 1.000002, z: 1.0000026}
+  _isNetworked: 1
+  _hasParentNetworkObjectAtEdit: 0
+  NetworkObserver: {fileID: 0}
+  _prefabId: -1
+  _scenePathHash: 0
+  _sceneId: 0
+  _sceneNetworkObjects: []
 --- !u!1 &5542681110885459382
 GameObject:
   m_ObjectHideFlags: 0
@@ -2005,7 +2383,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5110736981157297531}
   - component: {fileID: 2119293414451596587}
-  - component: {fileID: 1065921014144827895}
+  - component: {fileID: 1964819250768887682}
   m_Layer: 0
   m_Name: Collider
   m_TagString: Untagged
@@ -2042,7 +2420,7 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &1065921014144827895
+--- !u!114 &1964819250768887682
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2051,12 +2429,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 5542681110885459382}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 83ab8c4ff750e154d8543adb62b98513, type: 3}
+  m_Script: {fileID: 11500000, guid: 26b716c41e9b56b4baafaf13a523ba2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _componentIndexCache: 255
-  _addedNetworkObject: {fileID: 9131833438004412476}
-  _networkObjectCache: {fileID: 0}
+  _networkBehaviours: []
+  SceneTransformProperties:
+    Position: {x: 0.0056488942, y: 0.0062321275, z: -0.03544818}
+    Rotation: {x: -0.69730896, y: -0.06725914, z: 0.71017116, w: 0.069953375}
+    LocalScale: {x: 0.09, y: 0.09, z: 0.044347502}
+  _isNetworked: 1
+  _hasParentNetworkObjectAtEdit: 0
+  NetworkObserver: {fileID: 0}
+  _prefabId: -1
+  _scenePathHash: 0
+  _sceneId: 0
+  _sceneNetworkObjects: []
 --- !u!1 &5616046789488649868
 GameObject:
   m_ObjectHideFlags: 0
@@ -2254,6 +2641,7 @@ GameObject:
   - component: {fileID: 2215317810060730353}
   - component: {fileID: 2347498022431061830}
   - component: {fileID: 97674216668090283}
+  - component: {fileID: 301197323888921103}
   m_Layer: 0
   m_Name: Ring2
   m_TagString: Untagged
@@ -2316,9 +2704,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2836e36774ca1c4bbbee976e17b649c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _componentIndexCache: 25
+  _componentIndexCache: 4
   _addedNetworkObject: {fileID: 9131833438004412476}
-  _networkObjectCache: {fileID: 9131833438004412476}
+  _networkObjectCache: {fileID: 5466347498192256416}
   _synchronizeParent: 0
   _packing:
     Position: 1
@@ -2358,13 +2746,39 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e117b8e0668d5e46973320e6b02c22b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _componentIndexCache: 26
+  _componentIndexCache: 5
   _addedNetworkObject: {fileID: 9131833438004412476}
-  _networkObjectCache: {fileID: 9131833438004412476}
+  _networkObjectCache: {fileID: 5466347498192256416}
   handName: Left Hand Model
   boneIndex: 3
   boneChildCount: 2
   transformCopy: {fileID: 0}
+--- !u!114 &301197323888921103
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8057369679891020989}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26b716c41e9b56b4baafaf13a523ba2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _networkBehaviours:
+  - {fileID: 2347498022431061830}
+  - {fileID: 97674216668090283}
+  SceneTransformProperties:
+    Position: {x: 0.019969141, y: -0.02761736, z: 0.06302109}
+    Rotation: {x: 0.58625627, y: 0.13944606, z: -0.79799986, w: 0.0074036494}
+    LocalScale: {x: 1.0000026, y: 1.0000048, z: 0.9999995}
+  _isNetworked: 1
+  _hasParentNetworkObjectAtEdit: 1
+  NetworkObserver: {fileID: 0}
+  _prefabId: -1
+  _scenePathHash: 0
+  _sceneId: 0
+  _sceneNetworkObjects: []
 --- !u!1 &8279638443569635639
 GameObject:
   m_ObjectHideFlags: 0
@@ -2378,6 +2792,7 @@ GameObject:
   - component: {fileID: 6720098724511865519}
   - component: {fileID: 947386375527017167}
   - component: {fileID: 9076527650751673654}
+  - component: {fileID: 1263878699758599045}
   m_Layer: 0
   m_Name: Thumb2
   m_TagString: Untagged
@@ -2440,9 +2855,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e117b8e0668d5e46973320e6b02c22b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _componentIndexCache: 7
+  _componentIndexCache: 0
   _addedNetworkObject: {fileID: 9131833438004412476}
-  _networkObjectCache: {fileID: 9131833438004412476}
+  _networkObjectCache: {fileID: 1263878699758599045}
   handName: Left Hand Model
   boneIndex: 0
   boneChildCount: 2
@@ -2459,9 +2874,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2836e36774ca1c4bbbee976e17b649c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _componentIndexCache: 8
+  _componentIndexCache: 1
   _addedNetworkObject: {fileID: 9131833438004412476}
-  _networkObjectCache: {fileID: 9131833438004412476}
+  _networkObjectCache: {fileID: 1263878699758599045}
   _synchronizeParent: 0
   _packing:
     Position: 1
@@ -2489,6 +2904,32 @@ MonoBehaviour:
     X: 0
     Y: 0
     Z: 0
+--- !u!114 &1263878699758599045
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8279638443569635639}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26b716c41e9b56b4baafaf13a523ba2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _networkBehaviours:
+  - {fileID: 947386375527017167}
+  - {fileID: 9076527650751673654}
+  SceneTransformProperties:
+    Position: {x: 0.024779921, y: 0.08125199, z: -0.00979079}
+    Rotation: {x: 0.55192447, y: -0.5057254, z: -0.657567, w: -0.08501295}
+    LocalScale: {x: 0.9999988, y: 1.0000035, z: 1.0000001}
+  _isNetworked: 1
+  _hasParentNetworkObjectAtEdit: 0
+  NetworkObserver: {fileID: 0}
+  _prefabId: -1
+  _scenePathHash: 0
+  _sceneId: 0
+  _sceneNetworkObjects: []
 --- !u!1 &8431929814460823967
 GameObject:
   m_ObjectHideFlags: 0
@@ -2503,6 +2944,7 @@ GameObject:
   - component: {fileID: 2966430598502574785}
   - component: {fileID: 7843784311993349893}
   - component: {fileID: 7630780045840328765}
+  - component: {fileID: 4820561854179115502}
   m_Layer: 0
   m_Name: Thumb
   m_TagString: Untagged
@@ -2651,6 +3093,36 @@ MonoBehaviour:
   boneIndex: 0
   boneChildCount: 0
   transformCopy: {fileID: 0}
+--- !u!114 &4820561854179115502
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8431929814460823967}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26b716c41e9b56b4baafaf13a523ba2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _networkBehaviours:
+  - {fileID: 7843784311993349893}
+  - {fileID: 7630780045840328765}
+  - {fileID: 8408789500296059765}
+  - {fileID: 5552404613229304546}
+  - {fileID: 947386375527017167}
+  - {fileID: 9076527650751673654}
+  SceneTransformProperties:
+    Position: {x: 0.013520076, y: 0.029190788, z: -0.059689254}
+    Rotation: {x: 0.66645724, y: -0.5291872, z: -0.5209455, w: 0.06641966}
+    LocalScale: {x: 1.0000002, y: 1.000002, z: 1.0000012}
+  _isNetworked: 1
+  _hasParentNetworkObjectAtEdit: 1
+  NetworkObserver: {fileID: 0}
+  _prefabId: -1
+  _scenePathHash: 0
+  _sceneId: 0
+  _sceneNetworkObjects: []
 --- !u!1 &9044810282008030739
 GameObject:
   m_ObjectHideFlags: 0
@@ -2665,6 +3137,7 @@ GameObject:
   - component: {fileID: 8490915275367533325}
   - component: {fileID: 2698097118654943110}
   - component: {fileID: 2494841506628119004}
+  - component: {fileID: 4350981417991549265}
   m_Layer: 0
   m_Name: Index
   m_TagString: Untagged
@@ -2813,3 +3286,33 @@ MonoBehaviour:
     X: 0
     Y: 0
     Z: 0
+--- !u!114 &4350981417991549265
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9044810282008030739}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26b716c41e9b56b4baafaf13a523ba2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _networkBehaviours:
+  - {fileID: 2698097118654943110}
+  - {fileID: 2494841506628119004}
+  - {fileID: 136135339454365106}
+  - {fileID: 4019068810934521606}
+  - {fileID: 7411468569595615361}
+  - {fileID: 3885322313703991744}
+  SceneTransformProperties:
+    Position: {x: 0.0036564637, y: 0.03280663, z: 0.010028488}
+    Rotation: {x: 0.6626108, y: -0.10451012, z: -0.74162793, w: 0.0035759655}
+    LocalScale: {x: 0.9999983, y: 1.0000019, z: 1.0000032}
+  _isNetworked: 1
+  _hasParentNetworkObjectAtEdit: 1
+  NetworkObserver: {fileID: 0}
+  _prefabId: -1
+  _scenePathHash: 0
+  _sceneId: 0
+  _sceneNetworkObjects: []

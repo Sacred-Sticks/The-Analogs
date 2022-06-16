@@ -1,5 +1,5 @@
-using FishNet.Object;
 using UnityEngine;
+using FishNet.Object;
 
 public class DisableVisualsIfOwner : NetworkBehaviour
 {
@@ -7,7 +7,6 @@ public class DisableVisualsIfOwner : NetworkBehaviour
     {
         base.OnStartClient();
 
-        if (!IsOwner) return;
         GetComponent<Renderer>().enabled = false;
     }
 }
