@@ -8,7 +8,6 @@ public class PhysicsFollow : NetworkBehaviour
 {
     [SerializeField] private string leftControllerStr;
     [SerializeField] private string rightControllerStr;
-    [SerializeField] private string cameraStr;
     [Space]
     [SerializeField] private float followVelocityMultiplier;
     [SerializeField] private float angularVelocityMultiplier;
@@ -18,10 +17,8 @@ public class PhysicsFollow : NetworkBehaviour
 
     private Transform leftController;
     private Transform rightController;
-    private Transform cameraTransform;
     private Rigidbody leftBody;
     private Rigidbody rightBody;
-    private Rigidbody body;
 
     public override void OnStartClient()
     {
@@ -31,16 +28,13 @@ public class PhysicsFollow : NetworkBehaviour
         leftBody = leftHand.GetComponent<Rigidbody>();
         rightController = GameObject.Find(rightControllerStr).transform;
         rightBody = rightHand.GetComponent<Rigidbody>();
-        cameraTransform = Camera.main.transform;
-        body = GetComponent<Rigidbody>();
     }
 
     private void FixedUpdate()
     {
         if (!IsOwner) return;
 
-        // Move Head and Hands to match the positions and rotations of the Camera and Controllers
-        MoveBody(body, cameraTransform, transform);
+        // Move Hands to match the positions and rotations of the Camera and Controllers
         MoveBody(leftBody, leftController, leftHand);
         MoveBody(rightBody, rightController, rightHand);
     }

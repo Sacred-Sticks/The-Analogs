@@ -4,20 +4,14 @@ using FishNet;
 
 public sealed class MultiplayerMenu : MonoBehaviour
 {
-    [SerializeField] private Button host;
-    [SerializeField] private Button connect;
-
-    private void Start()
+    public void HostConnection()
     {
-        host.onClick.AddListener(() =>
-        {
-            InstanceFinder.ServerManager.StartConnection();
-            InstanceFinder.ClientManager.StartConnection();
-        });
+        InstanceFinder.ServerManager.StartConnection();
+        InstanceFinder.ClientManager.StartConnection();
+    }
 
-        connect.onClick.AddListener(() =>
-        {
-            InstanceFinder.ClientManager.StartConnection();
-        });
+    public void ClientConnection()
+    {
+        InstanceFinder.ClientManager.StartConnection();
     }
 }
