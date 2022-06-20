@@ -2,34 +2,39 @@ using FishNet.Component.Transforming;
 using FishNet.Object;
 using UnityEngine;
 
-[RequireComponent(typeof(NetworkTransform))]
 public class TransferOwnership : NetworkBehaviour
 {
-    NetworkTransform objectData;
+    NetworkObject objectData;
 
     public override void OnStartClient()
     {
         base.OnStartClient();
 
-        objectData = GetComponent<NetworkTransform>();
+        objectData = GetComponent<NetworkObject>();
+        if (objectData == null) Debug.Log("Object Data not found");
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider collision)
     {
+        Debug.Log("Trigger Entered");
+
         if (!IsOwner) return;
 
-        NetworkTransform collisionNetworkData = collision.gameObject.GetComponent<NetworkTransform>();
+        Debug.Log("Owned Object");
 
-        if (collisionNetworkData != null) ChangeOwnership(collisionNetworkData);
+        NetworkObject collisionNetworkData = collision.gameObject.GetComponent<NetworkObject>();
+
+        if (collisionNetworkData != null) ServerChangeOwnership(collisionNetworkData);
     }
 
     [ServerRpc]
-    private void ChangeOwnership(NetworkTransform collisionData)
+    private void ServerChangeOwnership(NetworkObject collisionData)
     {
+        Debug.Log("Collision Data Found");
         if (collisionData.Owner != objectData.Owner)
         {
             collisionData.GiveOwnership(objectData.Owner);
-            Debug.Log(collisionData.gameObject.name + " is now owned by " + objectData.gameObject.name);
+            Debug.Log(collisionData.gameObject.name + " is now owned by " + collisionData.gameObject.name);
         }
     }
 }

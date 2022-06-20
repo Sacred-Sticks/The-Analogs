@@ -7,6 +7,7 @@ public class DisableVisualsIfOwner : NetworkBehaviour
     {
         base.OnStartClient();
 
+        if (IsOwner)
         GetComponent<Renderer>().enabled = false;
     }
 }
