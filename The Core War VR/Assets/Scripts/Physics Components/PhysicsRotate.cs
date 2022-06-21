@@ -12,6 +12,9 @@ public class PhysicsRotate : NetworkBehaviour
     [SerializeField] private Vector3 rotationAxis;
     [SerializeField] private float rotationSpeed;
 
+
+    Vector3 rotateAxis;
+
     private Rigidbody body;
 
     private float rotationValue = 0;
@@ -19,20 +22,22 @@ public class PhysicsRotate : NetworkBehaviour
     private void Awake()
     {
         body = GetComponent<Rigidbody>();
+
+        rotateAxis = transform.up * rotationAxis.y + transform.forward * rotationAxis.z + transform.right * rotationAxis.x;
     }
 
     private void Update()
     {
-        if (IsOwner)
-            RotateBody();
+        // Call the ServerRPC
+        RotateBody();
     }
 
-    [ServerRpc]
+    [ServerRpc (RequireOwnership = false)]
     private void RotateBody()
     {
-        Debug.Log("Rotating " + gameObject.name);
+        // Read the input
         rotationValue = rotationInput.GetValue();
-        Vector3 rotateAxis = transform.up * rotationAxis.y + transform.forward * rotationAxis.z + transform.right * rotationAxis.x;
+        if (rotationValue != 0) Debug.Log("Rotating " + gameObject.name);
         body.angularVelocity = rotateAxis * rotationValue * rotationSpeed;
     }
 }

@@ -48,7 +48,8 @@ namespace Autohand{
 
         private void OnDisable() {
             for(int i = 0; i < posingHands.Count; i++)
-                posingHands[i].TryRemoveHandPoseArea(this);
+                if (posingHands[i] != null)
+                    posingHands[i].TryRemoveHandPoseArea(this);
             OnHandEnter.RemoveListener(HandEnter);
             OnHandExit.RemoveListener(HandExit);
         }

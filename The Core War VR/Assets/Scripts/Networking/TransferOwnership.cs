@@ -4,37 +4,25 @@ using UnityEngine;
 
 public class TransferOwnership : NetworkBehaviour
 {
-    NetworkObject objectData;
+    [SerializeField] NetworkObject objectData;
 
-    public override void OnStartClient()
+    private void OnTriggerEnter(Collider coll)
     {
-        base.OnStartClient();
-
-        objectData = GetComponent<NetworkObject>();
-        if (objectData == null) Debug.Log("Object Data not found");
-    }
-
-    private void OnTriggerEnter(Collider collision)
-    {
-        Debug.Log("Trigger Entered");
-
+        // Verify Client Owns the GameObject
         if (!IsOwner) return;
 
-        Debug.Log("Owned Object");
-
-        NetworkObject collisionNetworkData = collision.gameObject.GetComponent<NetworkObject>();
-
+        // Get Network Data for the collided object and send to the serverRPC
+        NetworkObject collisionNetworkData = coll.gameObject.GetComponent<NetworkObject>();
         if (collisionNetworkData != null) ServerChangeOwnership(collisionNetworkData);
     }
 
     [ServerRpc]
     private void ServerChangeOwnership(NetworkObject collisionData)
     {
-        Debug.Log("Collision Data Found");
-        if (collisionData.Owner != objectData.Owner)
-        {
-            collisionData.GiveOwnership(objectData.Owner);
-            Debug.Log(collisionData.gameObject.name + " is now owned by " + collisionData.gameObject.name);
-        }
+        // Check to make sure the collided object doesn't already share the same owner
+        if (collisionData.OwnerId == objectData.OwnerId) return;
+
+        // Set ownership of the collided network object to the owner of this network object
+        collisionData.GiveOwnership(objectData.Owner);
     }
 }

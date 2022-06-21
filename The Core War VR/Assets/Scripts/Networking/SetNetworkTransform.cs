@@ -24,7 +24,7 @@ public class SetNetworkTransform : NetworkBehaviour
         Transform hand = GameObject.Find(handName).transform;
         Transform pivot = hand.GetChild(5);
 
-        // Finish the job for the pivot
+        // Finalize bones for Pivot (-1) and Hand (-2)
         if (boneIndex == -1)
         {
             transformCopy = pivot;
@@ -51,6 +51,7 @@ public class SetNetworkTransform : NetworkBehaviour
 
     private void Update()
     {
+        // Verify that the client owns this object
         if (!IsOwner) return;
 
         transform.position = transformCopy.position;

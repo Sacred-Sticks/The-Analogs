@@ -27,14 +27,14 @@ public class PhysicsMove : NetworkBehaviour
 
     private void Update()
     {
-        if (IsOwner)
-            MoveBody();
+        // Call the ServerRPC
+        MoveBody();
     }
 
-    [ServerRpc]
+    [ServerRpc (RequireOwnership = false)]
     private void MoveBody()
     {
-        Debug.Log("Moving " + gameObject.name);
+        // Get inputs for each direction
         if (forwardInput != null) forward = forwardInput.GetValue();
         else forward = 0;
         if (rightwardInput != null) rightward = rightwardInput.GetValue();
@@ -42,7 +42,9 @@ public class PhysicsMove : NetworkBehaviour
         if (upwardInput != null) upward = upwardInput.GetValue();
         else upward = 0;
 
+        // Combine the inputs into a vector3 to be read relative to the transform rotation
         moveToward = (transform.forward * forward + transform.right * rightward + transform.up * upward).normalized * movementSpeed;
+        if (moveToward.magnitude != 0) Debug.Log("Moving " + gameObject.name);
         body.velocity = moveToward;
     }
 }
