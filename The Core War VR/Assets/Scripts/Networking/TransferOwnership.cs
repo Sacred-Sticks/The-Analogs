@@ -11,6 +11,8 @@ public class TransferOwnership : NetworkBehaviour
         // Verify Client Owns the GameObject
         if (!IsOwner) return;
 
+        if (coll.gameObject.GetComponent<PhysicsMove>() != null || coll.gameObject.GetComponent<PhysicsRotate>() != null) return;
+
         // Get Network Data for the collided object and send to the serverRPC
         NetworkObject collisionNetworkData = coll.gameObject.GetComponent<NetworkObject>();
         if (collisionNetworkData != null) ServerChangeOwnership(collisionNetworkData);

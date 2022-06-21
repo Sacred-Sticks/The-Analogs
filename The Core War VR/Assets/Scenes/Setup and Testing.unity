@@ -315,7 +315,7 @@ GameObject:
   - component: {fileID: 173468462}
   - component: {fileID: 173468461}
   - component: {fileID: 173468460}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Pill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -522,13 +522,10 @@ MonoBehaviour:
   _scenePathHash: 3245832714
   _sceneId: 13940745355854265184
   _sceneNetworkObjects:
-  - {fileID: 0}
   - {fileID: 69365542}
   - {fileID: 173468468}
   - {fileID: 488295626}
-  - {fileID: 0}
   - {fileID: 778649019}
-  - {fileID: 0}
   - {fileID: 1947917673}
 --- !u!1 &458001740
 GameObject:

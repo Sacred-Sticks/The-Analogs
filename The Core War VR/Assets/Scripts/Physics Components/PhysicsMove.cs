@@ -18,10 +18,12 @@ public class PhysicsMove : NetworkBehaviour
     private Vector3 moveToward;
     float forward = 0;
     float rightward = 0;
-    float upward = 0;
+    float upward = 0; 
 
-    private void Awake()
+    public override void OnStartClient()
     {
+        base.OnStartClient();
+
         body = GetComponent<Rigidbody>();
     }
 

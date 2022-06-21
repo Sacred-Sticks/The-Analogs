@@ -19,11 +19,11 @@ public class PhysicsRotate : NetworkBehaviour
 
     private float rotationValue = 0;
 
-    private void Awake()
+    public override void OnStartClient()
     {
-        body = GetComponent<Rigidbody>();
+        base.OnStartClient();
 
-        rotateAxis = transform.up * rotationAxis.y + transform.forward * rotationAxis.z + transform.right * rotationAxis.x;
+        body = GetComponent<Rigidbody>();
     }
 
     private void Update()
@@ -37,7 +37,14 @@ public class PhysicsRotate : NetworkBehaviour
     {
         // Read the input
         rotationValue = rotationInput.GetValue();
-        if (rotationValue != 0) Debug.Log("Rotating " + gameObject.name);
-        body.angularVelocity = rotateAxis * rotationValue * rotationSpeed;
+        if (rotationValue != 0)
+        {
+            rotateAxis = transform.up * rotationAxis.y + transform.forward * rotationAxis.z + transform.right * rotationAxis.x;
+            Debug.Log("Rotating " + gameObject.name);
+            body.angularVelocity = rotateAxis * rotationValue * rotationSpeed;
+        } else
+        {
+            body.angularVelocity = Vector3.zero;
+        }
     }
 }
