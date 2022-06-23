@@ -215,6 +215,36 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8708055475724479780, guid: 3a5cb8af2111583479df5edced1587fb,
+        type: 3}
+      propertyPath: crouching
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708055475724479780, guid: 3a5cb8af2111583479df5edced1587fb,
+        type: 3}
+      propertyPath: ignoreMe2
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708055475724479780, guid: 3a5cb8af2111583479df5edced1587fb,
+        type: 3}
+      propertyPath: snapTurning
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708055475724479780, guid: 3a5cb8af2111583479df5edced1587fb,
+        type: 3}
+      propertyPath: useMovement
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708055475724479780, guid: 3a5cb8af2111583479df5edced1587fb,
+        type: 3}
+      propertyPath: maxMoveSpeed
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708055475724479780, guid: 3a5cb8af2111583479df5edced1587fb,
+        type: 3}
+      propertyPath: smoothTurnSpeed
+      value: 100
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 890201432416909885, guid: 3a5cb8af2111583479df5edced1587fb, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3a5cb8af2111583479df5edced1587fb, type: 3}

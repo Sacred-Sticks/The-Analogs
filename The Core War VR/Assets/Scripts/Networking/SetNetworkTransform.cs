@@ -22,7 +22,7 @@ public class SetNetworkTransform : NetworkBehaviour
 
         // Find the pivot
         Transform hand = GameObject.Find(handName).transform;
-        Transform pivot = hand.GetChild(5);
+        Transform pivot = hand.GetChild(4);
 
         // Finalize bones for Pivot (-1) and Hand (-2)
         if (boneIndex == -1)
