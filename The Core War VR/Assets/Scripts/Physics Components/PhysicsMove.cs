@@ -3,7 +3,6 @@ using FishNet.Object;
 using FishNet.Component.Transforming;
 using UnityEngine;
 
-[RequireComponent(typeof(NetworkObject))]
 [RequireComponent(typeof(NetworkTransform))]
 [RequireComponent(typeof(Rigidbody))]
 public class PhysicsMove : NetworkBehaviour
@@ -45,8 +44,11 @@ public class PhysicsMove : NetworkBehaviour
         else upward = 0;
 
         // Combine the inputs into a vector3 to be read relative to the transform rotation
-        moveToward = (transform.forward * forward + transform.right * rightward + transform.up * upward).normalized * movementSpeed;
-        if (moveToward.magnitude != 0) Debug.Log("Moving " + gameObject.name);
-        body.velocity = moveToward;
+        if (body != null)
+        {
+            moveToward = (transform.forward * forward + transform.right * rightward + transform.up * upward).normalized * movementSpeed;
+            if (moveToward.magnitude != 0) Debug.Log("Moving " + gameObject.name);
+            body.velocity = moveToward;
+        }
     }
 }

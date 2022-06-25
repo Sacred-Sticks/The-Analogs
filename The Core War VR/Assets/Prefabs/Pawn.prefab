@@ -28,7 +28,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 712824207170757290}
   - {fileID: 8795808404123505042}
@@ -152,7 +152,6 @@ MonoBehaviour:
   _componentIndexCache: 0
   _addedNetworkObject: {fileID: 8025037730600035502}
   _networkObjectCache: {fileID: 8025037730600035502}
-  ownershipTransferCollider: {fileID: 0}
   objectData: {fileID: 0}
 --- !u!1001 &8446197290789749061
 PrefabInstance:
@@ -1847,7 +1846,6 @@ MonoBehaviour:
   _componentIndexCache: 3
   _addedNetworkObject: {fileID: 8025037730600035502}
   _networkObjectCache: {fileID: 8025037730600035502}
-  ownershipTransferCollider: {fileID: 0}
   objectData: {fileID: 8025037730600035502}
 --- !u!114 &7604906324117356820 stripped
 MonoBehaviour:
@@ -3525,7 +3523,6 @@ MonoBehaviour:
   _componentIndexCache: 40
   _addedNetworkObject: {fileID: 8025037730600035502}
   _networkObjectCache: {fileID: 8025037730600035502}
-  ownershipTransferCollider: {fileID: 0}
   objectData: {fileID: 8025037730600035502}
 --- !u!114 &7198121640593425941
 MonoBehaviour:

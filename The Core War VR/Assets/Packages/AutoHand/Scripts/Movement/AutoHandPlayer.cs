@@ -468,6 +468,7 @@ namespace Autohand {
 
                 if(headPhysicsFollower != null) {
                     //Keeps the head down when colliding something above it and manages bouncing back up when not
+                    if (headPhysicsFollower.headCollider == null) return;
                     if(Vector3.Distance(headCamera.transform.position, headPhysicsFollower.transform.position) > headPhysicsFollower.headCollider.radius / 1.5f) {
                         var idealPos = headPhysicsFollower.transform.position + (headCamera.transform.position - headPhysicsFollower.transform.position).normalized * headPhysicsFollower.headCollider.radius / 1.5f;
                         var offsetPos = headCamera.transform.position - idealPos;

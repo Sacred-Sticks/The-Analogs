@@ -3,7 +3,6 @@ using FishNet.Object;
 using FishNet.Component.Transforming;
 using UnityEngine;
 
-[RequireComponent(typeof(NetworkObject))]
 [RequireComponent(typeof(NetworkTransform))]
 [RequireComponent(typeof(Rigidbody))]
 public class PhysicsRotate : NetworkBehaviour

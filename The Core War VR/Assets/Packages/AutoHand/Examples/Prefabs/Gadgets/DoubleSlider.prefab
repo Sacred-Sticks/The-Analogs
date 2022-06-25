@@ -17,7 +17,6 @@ GameObject:
   - component: {fileID: 5632486148200346513}
   - component: {fileID: 716568895747422222}
   - component: {fileID: 4484683255884248381}
-  - component: {fileID: 3114759590716544600}
   - component: {fileID: 488295627}
   m_Layer: 0
   m_Name: Grab
@@ -113,8 +112,8 @@ Rigidbody:
   m_GameObject: {fileID: 1366701966557242859}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 3
-  m_AngularDrag: 0.05
+  m_Drag: 0
+  m_AngularDrag: 0
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -513,39 +512,6 @@ MonoBehaviour:
   poses:
   - {fileID: 5632486148200346513}
   - {fileID: 716568895747422222}
---- !u!114 &3114759590716544600
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1366701966557242859}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 26b716c41e9b56b4baafaf13a523ba2e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _networkBehaviours:
-  - {fileID: 488295627}
-  SceneTransformProperties:
-    Position: {x: -0.3, y: 1.0366, z: 2.5}
-    Rotation: {x: -0, y: -0, z: -0, w: 1}
-    LocalScale: {x: 1, y: 1, z: 1}
-  _isNetworked: 1
-  _hasParentNetworkObjectAtEdit: 0
-  NetworkObserver: {fileID: 0}
-  _prefabId: -1
-  _scenePathHash: 0
-  _sceneId: 0
-  _sceneNetworkObjects:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 3114759590716544600}
-  - {fileID: 0}
-  - {fileID: 0}
 --- !u!114 &488295627
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -559,8 +525,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _componentIndexCache: 0
-  _addedNetworkObject: {fileID: 3114759590716544600}
-  _networkObjectCache: {fileID: 3114759590716544600}
+  _addedNetworkObject: {fileID: 0}
+  _networkObjectCache: {fileID: 0}
   _synchronizeParent: 0
   _packing:
     Position: 1
