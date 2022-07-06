@@ -147,8 +147,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _networkBehaviours:
   - {fileID: 2388361342779687189}
-  - {fileID: 0}
-  - {fileID: 0}
   SceneTransformProperties:
     Position: {x: -31.405972, y: -17.86136, z: 45.75427}
     Rotation: {x: 0, y: 0, z: 0, w: 1}
@@ -314,6 +312,11 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 244568b9a967146459d81ec429c049b0,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 359f91d02f973fe4eb00e695c44f02b8, type: 2}
     - target: {fileID: 919132149155446097, guid: 244568b9a967146459d81ec429c049b0,
         type: 3}
       propertyPath: m_Name

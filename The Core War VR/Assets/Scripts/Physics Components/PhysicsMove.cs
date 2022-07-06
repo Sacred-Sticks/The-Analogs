@@ -7,9 +7,9 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody))]
 public class PhysicsMove : NetworkBehaviour
 {
-    [SerializeField] private PhysicsGadgetConfigurableLimitReader forwardInput;
-    [SerializeField] private PhysicsGadgetConfigurableLimitReader rightwardInput;
-    [SerializeField] private PhysicsGadgetConfigurableLimitReader upwardInput;
+    [SerializeField] private PhysicsInputSystem forwardInput;
+    [SerializeField] private PhysicsInputSystem rightwardInput;
+    [SerializeField] private PhysicsInputSystem upwardInput;
     [SerializeField] private float movementSpeed;
 
     private Rigidbody body;
@@ -26,13 +26,15 @@ public class PhysicsMove : NetworkBehaviour
         body = GetComponent<Rigidbody>();
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
+        if (body == null) return;
+
         // Call the ServerRPC
         MoveBody();
     }
 
-    [ServerRpc (RequireOwnership = false)]
+    [ServerRpc(RequireOwnership = false)]
     private void MoveBody()
     {
         // Get inputs for each direction
@@ -44,11 +46,8 @@ public class PhysicsMove : NetworkBehaviour
         else upward = 0;
 
         // Combine the inputs into a vector3 to be read relative to the transform rotation
-        if (body != null)
-        {
-            moveToward = (transform.forward * forward + transform.right * rightward + transform.up * upward).normalized * movementSpeed;
-            if (moveToward.magnitude != 0) Debug.Log("Moving " + gameObject.name);
-            body.velocity = moveToward;
-        }
+        moveToward = (transform.forward * forward + transform.right * rightward + transform.up * upward).normalized * movementSpeed;
+        //Debug.Log("Moving " + gameObject.name + " with velocity " + moveToward);
+        body.velocity = moveToward;
     }
 }

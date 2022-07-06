@@ -114,8 +114,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _componentIndexCache: 9
-  _addedNetworkObject: {fileID: 1460364279149264392}
-  _networkObjectCache: {fileID: 1460364279149264392}
+  _addedNetworkObject: {fileID: 2146566080366631438}
+  _networkObjectCache: {fileID: 0}
   _synchronizeParent: 0
   _packing:
     Position: 1
@@ -156,8 +156,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _componentIndexCache: 10
-  _addedNetworkObject: {fileID: 1460364279149264392}
-  _networkObjectCache: {fileID: 1460364279149264392}
+  _addedNetworkObject: {fileID: 2146566080366631438}
+  _networkObjectCache: {fileID: 0}
   handName: Right Hand Model
   boneIndex: 1
   boneChildCount: 0
@@ -276,8 +276,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _componentIndexCache: 3
-  _addedNetworkObject: {fileID: 1460364279149264392}
-  _networkObjectCache: {fileID: 1460364279149264392}
+  _addedNetworkObject: {fileID: 2146566080366631438}
+  _networkObjectCache: {fileID: 0}
   _synchronizeParent: 0
   _packing:
     Position: 1
@@ -318,8 +318,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _componentIndexCache: 4
-  _addedNetworkObject: {fileID: 1460364279149264392}
-  _networkObjectCache: {fileID: 1460364279149264392}
+  _addedNetworkObject: {fileID: 2146566080366631438}
+  _networkObjectCache: {fileID: 0}
   handName: Right Hand Model
   boneIndex: 0
   boneChildCount: 0
@@ -400,8 +400,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _componentIndexCache: 7
-  _addedNetworkObject: {fileID: 1460364279149264392}
-  _networkObjectCache: {fileID: 1460364279149264392}
+  _addedNetworkObject: {fileID: 2146566080366631438}
+  _networkObjectCache: {fileID: 0}
   _synchronizeParent: 0
   _packing:
     Position: 1
@@ -442,8 +442,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _componentIndexCache: 8
-  _addedNetworkObject: {fileID: 1460364279149264392}
-  _networkObjectCache: {fileID: 1460364279149264392}
+  _addedNetworkObject: {fileID: 2146566080366631438}
+  _networkObjectCache: {fileID: 0}
   handName: Right Hand Model
   boneIndex: 0
   boneChildCount: 2
@@ -524,8 +524,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _componentIndexCache: 25
-  _addedNetworkObject: {fileID: 1460364279149264392}
-  _networkObjectCache: {fileID: 1460364279149264392}
+  _addedNetworkObject: {fileID: 2146566080366631438}
+  _networkObjectCache: {fileID: 0}
   _synchronizeParent: 0
   _packing:
     Position: 1
@@ -566,8 +566,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _componentIndexCache: 26
-  _addedNetworkObject: {fileID: 1460364279149264392}
-  _networkObjectCache: {fileID: 1460364279149264392}
+  _addedNetworkObject: {fileID: 2146566080366631438}
+  _networkObjectCache: {fileID: 0}
   handName: Right Hand Model
   boneIndex: 3
   boneChildCount: 2
@@ -692,8 +692,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _componentIndexCache: 34
-  _addedNetworkObject: {fileID: 1460364279149264392}
-  _networkObjectCache: {fileID: 1460364279149264392}
+  _addedNetworkObject: {fileID: 2146566080366631438}
+  _networkObjectCache: {fileID: 0}
 --- !u!1 &3406530824960488367
 GameObject:
   m_ObjectHideFlags: 0
@@ -735,7 +735,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4103955995852968535}
   - component: {fileID: 7165768143292719623}
-  - component: {fileID: 5418867010804119718}
   m_Layer: 0
   m_Name: Collider
   m_TagString: Untagged
@@ -772,21 +771,6 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &5418867010804119718
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3671380454359681690}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 83ab8c4ff750e154d8543adb62b98513, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _componentIndexCache: 255
-  _addedNetworkObject: {fileID: 1460364279149264392}
-  _networkObjectCache: {fileID: 0}
 --- !u!1 &3740493220514236832
 GameObject:
   m_ObjectHideFlags: 0
@@ -932,8 +916,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _componentIndexCache: 15
-  _addedNetworkObject: {fileID: 1460364279149264392}
-  _networkObjectCache: {fileID: 1460364279149264392}
+  _addedNetworkObject: {fileID: 2146566080366631438}
+  _networkObjectCache: {fileID: 0}
   _synchronizeParent: 0
   _packing:
     Position: 1
@@ -974,8 +958,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _componentIndexCache: 16
-  _addedNetworkObject: {fileID: 1460364279149264392}
-  _networkObjectCache: {fileID: 1460364279149264392}
+  _addedNetworkObject: {fileID: 2146566080366631438}
+  _networkObjectCache: {fileID: 0}
   handName: Right Hand Model
   boneIndex: 2
   boneChildCount: 0
@@ -1056,8 +1040,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _componentIndexCache: 31
-  _addedNetworkObject: {fileID: 1460364279149264392}
-  _networkObjectCache: {fileID: 1460364279149264392}
+  _addedNetworkObject: {fileID: 2146566080366631438}
+  _networkObjectCache: {fileID: 0}
   _synchronizeParent: 0
   _packing:
     Position: 1
@@ -1098,8 +1082,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _componentIndexCache: 32
-  _addedNetworkObject: {fileID: 1460364279149264392}
-  _networkObjectCache: {fileID: 1460364279149264392}
+  _addedNetworkObject: {fileID: 2146566080366631438}
+  _networkObjectCache: {fileID: 0}
   handName: Right Hand Model
   boneIndex: 4
   boneChildCount: 2
@@ -1218,8 +1202,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _componentIndexCache: 27
-  _addedNetworkObject: {fileID: 1460364279149264392}
-  _networkObjectCache: {fileID: 1460364279149264392}
+  _addedNetworkObject: {fileID: 2146566080366631438}
+  _networkObjectCache: {fileID: 0}
   _synchronizeParent: 0
   _packing:
     Position: 1
@@ -1260,8 +1244,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _componentIndexCache: 28
-  _addedNetworkObject: {fileID: 1460364279149264392}
-  _networkObjectCache: {fileID: 1460364279149264392}
+  _addedNetworkObject: {fileID: 2146566080366631438}
+  _networkObjectCache: {fileID: 0}
   handName: Right Hand Model
   boneIndex: 4
   boneChildCount: 0
@@ -1342,8 +1326,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _componentIndexCache: 29
-  _addedNetworkObject: {fileID: 1460364279149264392}
-  _networkObjectCache: {fileID: 1460364279149264392}
+  _addedNetworkObject: {fileID: 2146566080366631438}
+  _networkObjectCache: {fileID: 0}
   _synchronizeParent: 0
   _packing:
     Position: 1
@@ -1384,8 +1368,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _componentIndexCache: 30
-  _addedNetworkObject: {fileID: 1460364279149264392}
-  _networkObjectCache: {fileID: 1460364279149264392}
+  _addedNetworkObject: {fileID: 2146566080366631438}
+  _networkObjectCache: {fileID: 0}
   handName: Right Hand Model
   boneIndex: 4
   boneChildCount: 1
@@ -1541,8 +1525,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _componentIndexCache: 33
-  _addedNetworkObject: {fileID: 1460364279149264392}
-  _networkObjectCache: {fileID: 1460364279149264392}
+  _addedNetworkObject: {fileID: 2146566080366631438}
+  _networkObjectCache: {fileID: 0}
 --- !u!1 &6898569511158953914
 GameObject:
   m_ObjectHideFlags: 0
@@ -1619,8 +1603,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _componentIndexCache: 11
-  _addedNetworkObject: {fileID: 1460364279149264392}
-  _networkObjectCache: {fileID: 1460364279149264392}
+  _addedNetworkObject: {fileID: 2146566080366631438}
+  _networkObjectCache: {fileID: 0}
   _synchronizeParent: 0
   _packing:
     Position: 1
@@ -1661,8 +1645,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _componentIndexCache: 12
-  _addedNetworkObject: {fileID: 1460364279149264392}
-  _networkObjectCache: {fileID: 1460364279149264392}
+  _addedNetworkObject: {fileID: 2146566080366631438}
+  _networkObjectCache: {fileID: 0}
   handName: Right Hand Model
   boneIndex: 1
   boneChildCount: 1
@@ -1781,8 +1765,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _componentIndexCache: 21
-  _addedNetworkObject: {fileID: 1460364279149264392}
-  _networkObjectCache: {fileID: 1460364279149264392}
+  _addedNetworkObject: {fileID: 2146566080366631438}
+  _networkObjectCache: {fileID: 0}
   _synchronizeParent: 0
   _packing:
     Position: 1
@@ -1823,8 +1807,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _componentIndexCache: 22
-  _addedNetworkObject: {fileID: 1460364279149264392}
-  _networkObjectCache: {fileID: 1460364279149264392}
+  _addedNetworkObject: {fileID: 2146566080366631438}
+  _networkObjectCache: {fileID: 0}
   handName: Right Hand Model
   boneIndex: 3
   boneChildCount: 0
@@ -1937,8 +1921,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _componentIndexCache: 5
-  _addedNetworkObject: {fileID: 1460364279149264392}
-  _networkObjectCache: {fileID: 1460364279149264392}
+  _addedNetworkObject: {fileID: 2146566080366631438}
+  _networkObjectCache: {fileID: 0}
   _synchronizeParent: 0
   _packing:
     Position: 1
@@ -1979,8 +1963,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _componentIndexCache: 6
-  _addedNetworkObject: {fileID: 1460364279149264392}
-  _networkObjectCache: {fileID: 1460364279149264392}
+  _addedNetworkObject: {fileID: 2146566080366631438}
+  _networkObjectCache: {fileID: 0}
   handName: Right Hand Model
   boneIndex: 0
   boneChildCount: 1
@@ -1996,8 +1980,8 @@ GameObject:
   - component: {fileID: 201057183853841603}
   - component: {fileID: 1390849710162262585}
   - component: {fileID: 3637309035040344164}
-  - component: {fileID: 1460364279149264392}
   - component: {fileID: 7435754655724786927}
+  - component: {fileID: 2146566080366631438}
   m_Layer: 0
   m_Name: Right Hand
   m_TagString: Untagged
@@ -2050,65 +2034,6 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.15
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1460364279149264392
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7692135290762055598}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 26b716c41e9b56b4baafaf13a523ba2e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _networkBehaviours:
-  - {fileID: 7435754655724786927}
-  - {fileID: 3539866575485022904}
-  - {fileID: 7311326989479061834}
-  - {fileID: 8054883736907764951}
-  - {fileID: 1369167713995048175}
-  - {fileID: 7621105198281613228}
-  - {fileID: 1579121309060230747}
-  - {fileID: 6888467891695495515}
-  - {fileID: 1081834746699069492}
-  - {fileID: 3410956698276277795}
-  - {fileID: 6699071650291484267}
-  - {fileID: 2315445630887993533}
-  - {fileID: 8341495462516625334}
-  - {fileID: 1032932770234505388}
-  - {fileID: 6459728755764963330}
-  - {fileID: 496313150237534643}
-  - {fileID: 3246936902645950856}
-  - {fileID: 5258463641688173567}
-  - {fileID: 2604751882787835890}
-  - {fileID: 7226627431646153332}
-  - {fileID: 4157501101864076554}
-  - {fileID: 6397092152355626842}
-  - {fileID: 1361918667871898456}
-  - {fileID: 8465993997218528619}
-  - {fileID: 1989911912777380455}
-  - {fileID: 1238152743784564452}
-  - {fileID: 1076163930584474320}
-  - {fileID: 4172996644450478904}
-  - {fileID: 566456435886332013}
-  - {fileID: 1503369267311339341}
-  - {fileID: 9122958903516009362}
-  - {fileID: 8077001635756342222}
-  - {fileID: 6240922456749691821}
-  - {fileID: 4850621399172378068}
-  - {fileID: 4291026385917352613}
-  SceneTransformProperties:
-    Position: {x: 0, y: 0, z: 0}
-    Rotation: {x: -0, y: -0, z: -0, w: 1}
-    LocalScale: {x: -0.8, y: 0.8, z: 0.8}
-  _isNetworked: 1
-  _hasParentNetworkObjectAtEdit: 0
-  NetworkObserver: {fileID: 0}
-  _prefabId: -1
-  _scenePathHash: 0
-  _sceneId: 0
-  _sceneNetworkObjects: []
 --- !u!114 &7435754655724786927
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2122,8 +2047,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _componentIndexCache: 0
-  _addedNetworkObject: {fileID: 1460364279149264392}
-  _networkObjectCache: {fileID: 1460364279149264392}
+  _addedNetworkObject: {fileID: 2146566080366631438}
+  _networkObjectCache: {fileID: 0}
   _synchronizeParent: 0
   _packing:
     Position: 1
@@ -2151,6 +2076,30 @@ MonoBehaviour:
     X: 0
     Y: 0
     Z: 0
+--- !u!114 &2146566080366631438
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7692135290762055598}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26b716c41e9b56b4baafaf13a523ba2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _networkBehaviours: []
+  SceneTransformProperties:
+    Position: {x: 0, y: 0, z: 0}
+    Rotation: {x: 0, y: 0, z: 0, w: 0}
+    LocalScale: {x: 0, y: 0, z: 0}
+  _isNetworked: 1
+  _hasParentNetworkObjectAtEdit: 0
+  NetworkObserver: {fileID: 0}
+  _prefabId: -1
+  _scenePathHash: 0
+  _sceneId: 0
+  _sceneNetworkObjects: []
 --- !u!1 &7769184568604028364
 GameObject:
   m_ObjectHideFlags: 0
@@ -2227,8 +2176,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _componentIndexCache: 23
-  _addedNetworkObject: {fileID: 1460364279149264392}
-  _networkObjectCache: {fileID: 1460364279149264392}
+  _addedNetworkObject: {fileID: 2146566080366631438}
+  _networkObjectCache: {fileID: 0}
   _synchronizeParent: 0
   _packing:
     Position: 1
@@ -2269,8 +2218,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _componentIndexCache: 24
-  _addedNetworkObject: {fileID: 1460364279149264392}
-  _networkObjectCache: {fileID: 1460364279149264392}
+  _addedNetworkObject: {fileID: 2146566080366631438}
+  _networkObjectCache: {fileID: 0}
   handName: Right Hand Model
   boneIndex: 3
   boneChildCount: 1
@@ -2351,8 +2300,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _componentIndexCache: 17
-  _addedNetworkObject: {fileID: 1460364279149264392}
-  _networkObjectCache: {fileID: 1460364279149264392}
+  _addedNetworkObject: {fileID: 2146566080366631438}
+  _networkObjectCache: {fileID: 0}
   _synchronizeParent: 0
   _packing:
     Position: 1
@@ -2393,8 +2342,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _componentIndexCache: 18
-  _addedNetworkObject: {fileID: 1460364279149264392}
-  _networkObjectCache: {fileID: 1460364279149264392}
+  _addedNetworkObject: {fileID: 2146566080366631438}
+  _networkObjectCache: {fileID: 0}
   handName: Right Hand Model
   boneIndex: 2
   boneChildCount: 1
@@ -2538,8 +2487,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _componentIndexCache: 13
-  _addedNetworkObject: {fileID: 1460364279149264392}
-  _networkObjectCache: {fileID: 1460364279149264392}
+  _addedNetworkObject: {fileID: 2146566080366631438}
+  _networkObjectCache: {fileID: 0}
   _synchronizeParent: 0
   _packing:
     Position: 1
@@ -2580,8 +2529,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _componentIndexCache: 14
-  _addedNetworkObject: {fileID: 1460364279149264392}
-  _networkObjectCache: {fileID: 1460364279149264392}
+  _addedNetworkObject: {fileID: 2146566080366631438}
+  _networkObjectCache: {fileID: 0}
   handName: Right Hand Model
   boneIndex: 1
   boneChildCount: 2
@@ -2662,8 +2611,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _componentIndexCache: 19
-  _addedNetworkObject: {fileID: 1460364279149264392}
-  _networkObjectCache: {fileID: 1460364279149264392}
+  _addedNetworkObject: {fileID: 2146566080366631438}
+  _networkObjectCache: {fileID: 0}
   _synchronizeParent: 0
   _packing:
     Position: 1
@@ -2704,8 +2653,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _componentIndexCache: 20
-  _addedNetworkObject: {fileID: 1460364279149264392}
-  _networkObjectCache: {fileID: 1460364279149264392}
+  _addedNetworkObject: {fileID: 2146566080366631438}
+  _networkObjectCache: {fileID: 0}
   handName: Right Hand Model
   boneIndex: 2
   boneChildCount: 2
@@ -2765,8 +2714,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _componentIndexCache: 1
-  _addedNetworkObject: {fileID: 1460364279149264392}
-  _networkObjectCache: {fileID: 1460364279149264392}
+  _addedNetworkObject: {fileID: 2146566080366631438}
+  _networkObjectCache: {fileID: 0}
   _synchronizeParent: 0
   _packing:
     Position: 1
@@ -2807,8 +2756,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _componentIndexCache: 2
-  _addedNetworkObject: {fileID: 1460364279149264392}
-  _networkObjectCache: {fileID: 1460364279149264392}
+  _addedNetworkObject: {fileID: 2146566080366631438}
+  _networkObjectCache: {fileID: 0}
   handName: Right Hand Model
   boneIndex: -1
   boneChildCount: 0

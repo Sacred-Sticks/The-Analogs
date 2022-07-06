@@ -46,7 +46,7 @@ public class SetNetworkTransform : NetworkBehaviour
 
         // Assign the transformCopy and disable the colliders
         transformCopy = child;
-        gameObject.GetComponent<CapsuleCollider>().enabled = false;
+        //gameObject.GetComponent<CapsuleCollider>().enabled = false;
     }
 
     private void Update()

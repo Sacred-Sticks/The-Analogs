@@ -7,7 +7,7 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody))]
 public class PhysicsRotate : NetworkBehaviour
 {
-    [SerializeField] private PhysicsGadgetConfigurableLimitReader rotationInput;
+    [SerializeField] private PhysicsInputSystem rotationInput;
     [SerializeField] private Vector3 rotationAxis;
     [SerializeField] private float rotationSpeed;
 
@@ -18,14 +18,12 @@ public class PhysicsRotate : NetworkBehaviour
 
     private float rotationValue = 0;
 
-    public override void OnStartClient()
+    private void Awake()
     {
-        base.OnStartClient();
-
         body = GetComponent<Rigidbody>();
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
         // Call the ServerRPC
         RotateBody();
@@ -34,12 +32,14 @@ public class PhysicsRotate : NetworkBehaviour
     [ServerRpc (RequireOwnership = false)]
     private void RotateBody()
     {
+        if (rotationInput == null) return;
+
         // Read the input
         rotationValue = rotationInput.GetValue();
         if (rotationValue != 0)
         {
             rotateAxis = transform.up * rotationAxis.y + transform.forward * rotationAxis.z + transform.right * rotationAxis.x;
-            Debug.Log("Rotating " + gameObject.name);
+            //Debug.Log("Rotating " + gameObject.name);
             body.angularVelocity = rotateAxis * rotationValue * rotationSpeed;
         } else
         {
