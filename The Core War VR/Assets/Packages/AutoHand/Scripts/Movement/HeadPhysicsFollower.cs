@@ -65,7 +65,7 @@ namespace Autohand{
             startHeadPos = headCamera.transform.position;
         }
 
-        protected void FixedUpdate() {
+            protected void FixedUpdate() {
             moveTo.position = headCamera.transform.position;
 
             if(startHeadPos.y != headCamera.transform.position.y && !started) {

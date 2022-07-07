@@ -31,7 +31,7 @@ public sealed class PhysicsButtonInput : PhysicsInputSystem
     public override void RoundValue()
     {
         if (value < 0.01f) value = 0;
-        if (value > 0.99f) value = 1;
+        else if (value > 0.99f) value = 1;
     }
 
     public override float GetValue()

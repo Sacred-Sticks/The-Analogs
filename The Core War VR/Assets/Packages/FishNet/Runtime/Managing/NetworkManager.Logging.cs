@@ -84,7 +84,7 @@ namespace FishNet.Managing
         {
             if (CanLog(LoggingType.Warning))
             {
-                Debug.LogWarning(txt);
+                //Debug.LogWarning(txt);
                 WriteLog(LoggingType.Warning, txt);
             }
         }
