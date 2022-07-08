@@ -3,6 +3,9 @@ using UnityEngine;
 [RequireComponent(typeof(ConfigurableJoint))]
 public sealed class PhysicsButtonInput : PhysicsInputSystem
 {
+    [SerializeField] private float threshold;
+    [SerializeField] private float deadzone;
+
     ConfigurableJoint joint;
     float value;
     float initialYPos;
@@ -30,8 +33,8 @@ public sealed class PhysicsButtonInput : PhysicsInputSystem
 
     public override void RoundValue()
     {
-        if (value < 0.01f) value = 0;
-        else if (value > 0.99f) value = 1;
+        if (value < deadzone) value = 0;
+        else if (value > threshold) value = 1;
     }
 
     public override float GetValue()

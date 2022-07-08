@@ -52,8 +52,8 @@ public class PhysicsLeverInput : PhysicsInputSystem
         {
             value = 0;
         }
-        else if (value > 1 - threshold) value = 1;
-        else if (value < -1 + threshold) value = -1;
+        else if (value > threshold) value = 1;
+        else if (value < -threshold) value = -1;
     }
 
     public override float GetValue()

@@ -362,6 +362,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67b973ee10562cf49b3f73fbaf47b1f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  threshold: 0.99
+  deadzone: 0.01
 --- !u!1 &5995498460095166571
 GameObject:
   m_ObjectHideFlags: 0
@@ -509,8 +511,8 @@ MonoBehaviour:
   _sceneNetworkObjects:
   - {fileID: 0}
   - {fileID: 0}
-  - {fileID: 5957308228455433750}
   - {fileID: 0}
+  - {fileID: 5957308228455433750}
   - {fileID: 0}
   - {fileID: 0}
 --- !u!114 &2754556225624311698
