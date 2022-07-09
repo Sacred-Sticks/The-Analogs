@@ -17,8 +17,6 @@ public class PhysicsLeverInput : PhysicsInputSystem
     private float upperLimit;
     private float range;
 
-    private bool isResetting = false;
-
     private void Awake()
     {
         joint = GetComponent<HingeJoint>();

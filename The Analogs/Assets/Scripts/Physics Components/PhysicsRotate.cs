@@ -1,4 +1,3 @@
-using Autohand;
 using FishNet.Object;
 using FishNet.Component.Transforming;
 using UnityEngine;
@@ -7,7 +6,7 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody))]
 public class PhysicsRotate : NetworkBehaviour
 {
-    [SerializeField] private PhysicsInputSystem rotationInput;
+    [SerializeField] private PhysicsInputSystem[] rotationInput;
     [SerializeField] private Vector3 rotationAxis;
     [SerializeField] private float rotationSpeed;
 
@@ -35,7 +34,11 @@ public class PhysicsRotate : NetworkBehaviour
         if (rotationInput == null) return;
 
         // Read the input
-        rotationValue = rotationInput.GetValue();
+        rotationValue = 0;
+        for (int i = 0; i < rotationInput.Length; i++)
+        {
+            rotationValue += rotationInput[i].GetValue();
+        }
         if (rotationValue != 0)
         {
             rotateAxis = transform.up * rotationAxis.y + transform.forward * rotationAxis.z + transform.right * rotationAxis.x;

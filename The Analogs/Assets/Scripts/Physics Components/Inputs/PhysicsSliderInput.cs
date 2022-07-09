@@ -24,7 +24,7 @@ public class PhysicsSliderInput : PhysicsInputSystem
     {
         SetValue();
         RoundValue();
-        Debug.Log(transform.parent.name + " has a value of " + value + " after rounding");
+        //Debug.Log(transform.parent.name + " has a value of " + value + " after rounding");
     }
 
     public override void SetValue()

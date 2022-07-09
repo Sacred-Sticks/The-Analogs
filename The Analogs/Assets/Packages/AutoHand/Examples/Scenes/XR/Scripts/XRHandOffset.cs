@@ -84,13 +84,19 @@ public class XRHandOffset : MonoBehaviour {
                         var offsetRot = GetRotationOffset(defaultDevice, device.deviceNames[i]);
 
                         foreach (var leftOffset in leftOffsets){
-                            leftOffset.localPosition += new Vector3(-offsetPos.x, offsetPos.y, offsetPos.z);
-                            leftOffset.localEulerAngles += new Vector3(offsetRot.x, -offsetRot.y, -offsetRot.z);
+                            if (leftOffset != null)
+                            {
+                                leftOffset.localPosition += new Vector3(-offsetPos.x, offsetPos.y, offsetPos.z);
+                                leftOffset.localEulerAngles += new Vector3(offsetRot.x, -offsetRot.y, -offsetRot.z);
+                            }
                         }
 
                         foreach (var rightOffset in rightOffsets){
-                            rightOffset.localPosition += offsetPos;
-                            rightOffset.localEulerAngles += offsetRot;
+                            if (rightOffset != null)
+                            {
+                                rightOffset.localPosition += offsetPos;
+                                rightOffset.localEulerAngles += offsetRot;
+                            }
                         }
 
                         OnDisable();
